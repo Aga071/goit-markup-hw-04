@@ -12,6 +12,7 @@
   --background-color-primary-dark: #2f303a;
   --border-header-color: #ececec;
   --border-portfolio-color: #eeeeee;
+  --icons-color: #afb1b8;
 }
 * {
   margin: 0;
@@ -62,6 +63,13 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.icon-1 {
+  fill: var(--color-text-secondary);
+  margin-right: 10px;
+}
+.icon-1:hover {
+  fill: var(--color-logo);
 }
 .logo,
 .logo-footer {
@@ -156,6 +164,16 @@ body {
 .portfolio-list {
   flex-wrap: wrap;
 }
+.icon-lorem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-color-secondary-light);
+  border-radius: 4px;
+}
 .heading-lorem-ipsum {
   font-weight: 700;
   font-size: 14px;
@@ -185,7 +203,42 @@ body {
   padding: 30px 0 10px;
 }
 .workplace {
+  padding-bottom: 16px;
+}
+.icon-team-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding-bottom: 30px;
+}
+.icon-team-secondary {
+  padding-top: 12px;
+  width: 44px;
+  height: 44px;
+}
+.icon-team-secondary:hover {
+  background-color: var(--color-logo);
+  border-radius: 50%;
+}
+.icon-team {
+  fill: var(--icons-color);
+}
+.icon-team:hover {
+  fill: var(--background-color-primary-light);
+}
+.icon-customers {
+  fill: var(--icons-color);
+  padding-top: 17.71px;
+  padding-bottom: 14.25px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+.icon-customers:hover {
+  fill: var(--color-logo);
+  border-color: var(--color-logo);
 }
 .page-filter-list {
   display: flex;
